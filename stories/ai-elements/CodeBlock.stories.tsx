@@ -93,6 +93,10 @@ export const WithLineNumbers: Story = {
 };
 
 export const WithCopyButton: Story = {
+  args: {
+    code: sampleJavaScript,
+    language: "javascript",
+  },
   render: () => (
     <div className="w-[600px]">
       <CodeBlock code={sampleJavaScript} language="javascript">
